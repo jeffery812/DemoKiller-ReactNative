@@ -1,0 +1,8 @@
+{
+  "expoServerNgrokUrl": "https://up-naz.zhihuitang.demokiller.exp.direct",
+  "packagerNgrokUrl": "https://packager.up-naz.zhihuitang.demokiller.exp.direct",
+  "ngrokPid": 8107,
+  "expoServerPort": 19003,
+  "packagerPort": 19005,
+  "packagerPid": 8093
+}

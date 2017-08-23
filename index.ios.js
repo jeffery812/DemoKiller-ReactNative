@@ -4,27 +4,11 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import store from './application/Store';
+import React from 'react';
 import {
   AppRegistry,
 } from 'react-native';
 
-import AppNavigator from './application/App';
+import App from "./App";
 
-class DemoKiller extends Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-        <Provider store={store}>
-          <AppNavigator />
-        </Provider>
-    )
-  }
-}
-
-AppRegistry.registerComponent('DemoKiller', () => DemoKiller);
+AppRegistry.registerComponent('DemoKiller', () => App);
