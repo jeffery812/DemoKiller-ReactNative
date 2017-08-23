@@ -91,7 +91,7 @@ $: yarn
 
 or scan it from Expo
 
- ![expo-qr-code](./resources/expo.png?raw=true "Title")
+ ![expo-qr-code](./assets/expo.png?raw=true "Title")
 
 
 ## So the combined configuration is as follows
