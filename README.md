@@ -1,4 +1,4 @@
-# README.md
+# Demo Killer for React-Native
 ## How to run it
 * Make sure **package.json** has correct **react-native** dependency:
 
