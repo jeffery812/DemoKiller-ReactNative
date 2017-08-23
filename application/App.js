@@ -25,9 +25,15 @@ import StacksInTabs from './StacksInTabs';
 import StacksOverTabs from './StacksOverTabs';
 import SimpleStack from './SimpleStack';
 import SimpleTabs from './SimpleTabs';
+import ReduxSample from './Views/ReduxSample';
 
 
 const ExampleRoutes = {
+    ReduxSample: {
+        name: 'React Redux Example',
+        description: 'A Redux example',
+        screen: ReduxSample,
+    },
     SimpleStack: {
         name: 'Stack Example',
         description: 'A card stack',
