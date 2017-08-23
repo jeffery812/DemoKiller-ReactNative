@@ -3,7 +3,7 @@
   "displayName": "DemoKiller",
 
   "expo": {
-    "name": "my-new-project",
+    "name": "DemoKiller for ReactNative",
     "description": "An empty new project",
     "slug": "my-new-project",
     "privacy": "public",

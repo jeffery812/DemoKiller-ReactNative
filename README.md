@@ -87,8 +87,11 @@ $: yarn
 ```
 
 * Run it from Expo: 
- https://exp.host/@zhihuitang/my-new-project
- ![](resources/expo.jpg)
+ https://expo.io/@zhihuitang/demo-killer
+
+or scan it from Expo
+
+ ![expo-qr-code](./resources/expo.png?raw=true "Title")
 
 
 ## So the combined configuration is as follows
