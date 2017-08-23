@@ -3,9 +3,9 @@
   "displayName": "DemoKiller",
 
   "expo": {
-    "name": "DemoKiller for ReactNative",
-    "description": "An empty new project",
-    "slug": "my-new-project",
+    "name": "demo-killer-rn",
+    "description": "Demo Killer for React-Native",
+    "slug": "demo-killer",
     "privacy": "public",
     "sdkVersion": "20.0.0",
     "version": "1.0.0",
