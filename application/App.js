@@ -26,6 +26,7 @@ import StacksOverTabs from './StacksOverTabs';
 import SimpleStack from './SimpleStack';
 import SimpleTabs from './SimpleTabs';
 import ReduxSample from './Views/ReduxSample';
+import Weibo from './Weibo/index';
 
 
 const ExampleRoutes = {
@@ -34,6 +35,13 @@ const ExampleRoutes = {
         description: 'A Redux example',
         screen: ReduxSample,
     },
+
+    Weibo: {
+        name: 'Weibo Client',
+        description: 'A Weibo client',
+        screen: Weibo,
+    },
+
     SimpleStack: {
         name: 'Stack Example',
         description: 'A card stack',

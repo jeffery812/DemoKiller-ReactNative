@@ -7,7 +7,7 @@ import { Image, Platform, StyleSheet, Text, View } from 'react-native';
 const Banner = () => (
   <View style={styles.banner}>
     <Image source={require('./assets/NavLogo.png')} style={styles.image} />
-    <Text style={styles.title}>React Navigation Examples</Text>
+    <Text style={styles.title}>Demo Killer [{ __DEV__ ? "Debug" : "Release" }]</Text>
   </View>
 );
 
