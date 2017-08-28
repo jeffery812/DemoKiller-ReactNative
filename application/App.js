@@ -27,6 +27,7 @@ import SimpleStack from './SimpleStack';
 import SimpleTabs from './SimpleTabs';
 import ReduxSample from './Views/ReduxSample';
 import Weibo from './Weibo/index';
+import HelloWorld from "./HelloWorld/HelloWorld";
 
 
 const ExampleRoutes = {
@@ -42,6 +43,11 @@ const ExampleRoutes = {
         screen: Weibo,
     },
 
+    HelloWorld: {
+        name: 'HelloWorld',
+        description: 'A HelloWord from scratch',
+        screen: HelloWorld,
+    },
     SimpleStack: {
         name: 'Stack Example',
         description: 'A card stack',
