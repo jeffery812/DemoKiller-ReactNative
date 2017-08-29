@@ -28,9 +28,14 @@ import SimpleTabs from './SimpleTabs';
 import ReduxSample from './Views/ReduxSample';
 import Weibo from './Weibo/index';
 import HelloWorld from "./HelloWorld/HelloWorld";
-
+import ChatApp from "./ChatApp/ChatApp";
 
 const ExampleRoutes = {
+    ChatApp: {
+        name: 'Chat App',
+        description: 'A Chat App on Youtube',
+        screen: ChatApp,
+    },
     ReduxSample: {
         name: 'React Redux Example',
         description: 'A Redux example',
