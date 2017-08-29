@@ -4,10 +4,10 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 
-class ViewController extends Component {
+class ViewContainer extends Component {
     render() {
         return (
-            <View style={styles.viewContainer}>
+            <View style={[styles.viewContainer, this.props.style || {}]}>
                 {this.props.children}
             </View>
         )
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ViewController;
+export default ViewContainer;

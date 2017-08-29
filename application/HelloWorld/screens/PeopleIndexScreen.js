@@ -11,7 +11,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import ViewController from "../Components/ViewController";
+import ViewContainer from "../Components/ViewContainer";
 import StatusBarBackground from "../Components/StatusBarBackground";
 import _ from 'lodash';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -35,11 +35,19 @@ class PeopleIndexScreen extends Component {
             peopleDataSource: ds.cloneWithRows(people)
         };
         this.renderPersonRow = this.renderPersonRow.bind(this);
+        this.navigateToPersonShow = this.navigateToPersonShow.bind(this);
     }
 
+    navigateToPersonShow(person) {
+        this.props.navigator.push({
+            indent: 'PersonShow',
+            person,
+        })
+
+    }
     renderPersonRow(person) {
         return (
-            <TouchableOpacity style={styles.personRow} onPress={(event) => console.log(person)}>
+            <TouchableOpacity style={styles.personRow} onPress={(event) => this.navigateToPersonShow(person)}>
                 <Text style={styles.personName}>{_.capitalize(person.firstName)} {_.capitalize(person.lastName)}</Text>
                 <View style={{flex:1}}/>
                 <Icon name="chevron-right" size={20} style={styles.personMoreIcon}/>
@@ -49,14 +57,14 @@ class PeopleIndexScreen extends Component {
 
     render() {
         return (
-            <ViewController >
+            <ViewContainer >
                 <StatusBarBackground style={{backgroundColor:"skyblue"}}/>
                 <Text style={{backgroundColor:"coral"}}>Hello world</Text>
                 <ListView style={{marginTop:50, backgroundColor:"mistyrose"}}
                           dataSource={this.state.peopleDataSource}
                           renderRow={(person) => { return this.renderPersonRow(person)}}
                 />
-            </ViewController>
+            </ViewContainer>
         )
     }
 }

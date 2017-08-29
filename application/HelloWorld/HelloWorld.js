@@ -1,9 +1,10 @@
 'use strict'
 
 
+//import React, { Component } from 'react';
 import React, { Component } from 'react';
-import PeopleIndexScreen from "./screens/PeopleIndexScreen";
-
+import { StyleSheet, Text } from 'react-native';
+import AppNavigator from './navigation/AppNavigator';
 
 /**
  * https://www.youtube.com/watch?v=r5OPRhelEIU
@@ -13,10 +14,15 @@ class HelloWorld extends Component {
 
     render() {
         return (
-            <PeopleIndexScreen/>
+            <AppNavigator/>
         )
     }
 }
 
+const styles = StyleSheet.create({
+    navigatorStyles: {
+
+    }
+})
 
 export default HelloWorld;
