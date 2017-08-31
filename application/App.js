@@ -29,8 +29,20 @@ import ReduxSample from './Views/ReduxSample';
 import Weibo from './Weibo/index';
 import HelloWorld from "./HelloWorld/HelloWorld";
 import ChatApp from "./ChatApp/ChatApp";
+import LoginScreen from "./Login/LoginScreen";
+import StopWatch from './StopWatch/StopWatch';
 
 const ExampleRoutes = {
+    StopWatch: {
+        name: 'Stop watch demo',
+        description: 'A stop watch demo',
+        screen: StopWatch,
+    },
+   LoginScreen: {
+        name: 'Login Demo',
+        description: 'A Login Layout Page',
+        screen: LoginScreen,
+    },
     ChatApp: {
         name: 'Chat App',
         description: 'A Chat App on Youtube',

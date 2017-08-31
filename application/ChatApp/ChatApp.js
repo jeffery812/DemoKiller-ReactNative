@@ -1,12 +1,7 @@
 import React from 'react';
-
-
-import {
-    View,
-    Text,
-} from 'react-native';
 import {
     Router,
+    Stack,
     Scene,
 } from 'react-native-router-flux';
 import {
@@ -18,12 +13,14 @@ import Chat from "./components/Chat";
 
 class ChatApp extends React.Component {
     render() {
-        let title = Platform.OS === 'ios' ? "Hello Apple" : "Hello Android";
         return (
             <Router>
                 <Scene key='root' style={{paddingTop: Platform.OS == 'ios' ? 64 : 54}}>
-                    <Scene key='home' component={Home} title= {title}/>
-                    <Scene key='chat' component={Chat} title= {title}/>
+                    <Scene key='chat' component={Chat} title= 'Chat'
+                           navigationBarStyle={{backgroundColor:'#3498db',borderBottomWidth:0}}
+                    />
+                    <Scene key='home' component={Home} title= 'Login'
+                           initial/>
                 </Scene>
             </Router>
         )
