@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import Util from './utils';
+import Util from '../utils/utils';
 
 const styles = StyleSheet.create({
     watchFaceContainer:{

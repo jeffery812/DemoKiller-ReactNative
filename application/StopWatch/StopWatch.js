@@ -67,7 +67,7 @@ export default class StopWatch extends Component{
             () => {
                 this.setState({
                     currentTime: (new Date()).getTime()
-                })
+                });
                 countingTime = this.state.timeAccumulation + this.state.currentTime - this.state.initialTime;
                 minute = Math.floor(countingTime/(60*1000));
                 second = Math.floor((countingTime-6000*minute)/1000);
