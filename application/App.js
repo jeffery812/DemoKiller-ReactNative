@@ -31,8 +31,14 @@ import HelloWorld from "./HelloWorld/HelloWorld";
 import ChatApp from "./ChatApp/ChatApp";
 import LoginScreen from "./Login/LoginScreen";
 import StopWatch from './StopWatch/StopWatch';
+import Todo from "./Todo/todo";
 
 const ExampleRoutes = {
+    Todo: {
+        name: 'Todo App',
+        description: 'A Todo Demo',
+        screen: Todo,
+    },
     StopWatch: {
         name: 'Stop watch demo',
         description: 'A stop watch demo',
