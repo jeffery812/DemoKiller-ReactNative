@@ -32,8 +32,14 @@ import ChatApp from "./ChatApp/ChatApp";
 import LoginScreen from "./Login/LoginScreen";
 import StopWatch from './StopWatch/StopWatch';
 import Todo from "./Todo/todo";
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const ExampleRoutes = {
+    SocialLogin: {
+        name: 'Social Login',
+        description: 'A SocialLogin Demo',
+        screen: SocialLogin,
+    },
     Todo: {
         name: 'Todo App',
         description: 'A Todo Demo',
